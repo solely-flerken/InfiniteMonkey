@@ -10,8 +10,8 @@ from datetime import datetime
 FILE_PATH = "monkey-attempt.py"
 SUCCESS_DIR = "success"
 BRANCH_NAME = "main"
-MIN_DELAY = 3600
-MAX_DELAY = 86400
+MIN_DELAY = 3600  #  1 hour
+MAX_DELAY = 43200 # 12 hours
 CODE_LENGTH = 50
 
 def generate_random_code():
