@@ -6,12 +6,12 @@ import subprocess
 import time
 from datetime import datetime
 
+from distributions import generate_random_waiting_time
+
 # Configurable parameters
 FILE_PATH = "monkey-attempt.py"
 SUCCESS_DIR = "success"
 BRANCH_NAME = "main"
-MIN_DELAY = 3600  #  1 hour
-MAX_DELAY = 43200 # 12 hours
 CODE_LENGTH = 50
 
 def generate_random_code():
@@ -80,7 +80,7 @@ def git_commit_and_push(commit_message: str):
 def schedule_updates():
     """Schedule updates at random intervals."""
     while True:
-        delay = random.randint(MIN_DELAY, MAX_DELAY)
+        delay = generate_random_waiting_time('gamma')
         print(f"Waiting for {delay} seconds before the next update...")
         time.sleep(delay)
 
