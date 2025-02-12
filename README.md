@@ -28,7 +28,7 @@ a monkey randomly pressing keys on a keyboard could eventually type a meaningful
 This script continuously generates random "code," tests it, and if by some miracle it actually works, it gets saved as a successful monkey creation.
 
 ## 🚀 Setup
-Make sure both `Git` and `Python` are installed and both are added to the System `PATH`.
+The script automatically commits and pushes to a Git repository so make sure that both `Git` and `Python` are installed and both are added to the System `PATH`.
 
 Make sure to reconfigure the url to your own Git repository.
 ```sh
@@ -39,11 +39,7 @@ Make sure to reconfigure the url to your own Git repository.
 ```sh
     git push --set-upstream origin main
 ```
-Be sure to set your desired credentials. You can set the local Git credentials as follows.
-```sh
-    git config user.name "Your Name"
-    git config user.email "your_email@example.com"
-```
+
 You can run this script however you like. But I suggest to automate it. I'm using Windows' Task Scheduler.
 
 1. Press Windows + R to open the Run dialog, type ``taskschd.msc``, and press **Enter**.
@@ -61,3 +57,9 @@ monkey-algorithm/
 │── monkey.py           # The main script
 │── README.md           # This file
 ```
+
+## Enhancements
+While the current approach relies purely on randomness, future improvements aim to introduce a structured randomness to increase the likelihood of generating functioning code while maintaining the core idea of the Infinite Monkey Theorem.
+These improvements could include some of the following features:
+- Guided Randomness: Instead of generating completely random code, we could introduce syntax-aware token selection.
+- Evolution: Implement an algorithm where partially working code is modified rather than starting from scratch each time.
