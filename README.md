@@ -61,5 +61,5 @@ monkey-algorithm/
 ## Enhancements
 While the current approach relies purely on randomness, future improvements aim to introduce a structured randomness to increase the likelihood of generating functioning code while maintaining the core idea of the Infinite Monkey Theorem.
 These improvements could include some of the following features:
-- Guided Randomness: Instead of generating completely random code, we could introduce syntax-aware token selection.
-- Evolution: Implement an algorithm where partially working code is modified rather than starting from scratch each time.
+- **Guided Randomness:** Instead of generating completely random code, we could introduce syntax-aware token selection.
+- **Evolution:** Implement an algorithm where partially working code is modified rather than starting from scratch each time.
