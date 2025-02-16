@@ -3,7 +3,7 @@ from scipy.stats import gamma, expon, poisson
 import matplotlib.pyplot as plt
 
 # Parameters
-MEAN_WAIT_TIME = 1 * 60 * 60 # seconds
+MEAN_WAIT_TIME = 1.5 * 60 * 60 # seconds
 
 # Gamma distribution parameters
 GAMMA_SHAPE = 1.9
