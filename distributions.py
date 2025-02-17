@@ -3,10 +3,10 @@ from scipy.stats import gamma, expon, poisson
 import matplotlib.pyplot as plt
 
 # Parameters
-MEAN_WAIT_TIME = 1.5 * 60 * 60 # seconds
+MEAN_WAIT_TIME = 2 * 60 * 60 # seconds
 
 # Gamma distribution parameters
-GAMMA_SHAPE = 1.9
+GAMMA_SHAPE = 2
 GAMMA_SCALE = MEAN_WAIT_TIME
 GAMMA_OFFSET = 900 # seconds
 
@@ -109,7 +109,7 @@ def test_distributions(sample_size: int = 1000):
 
     # Plot Gamma, Exponential, and Poisson distributions
     plot_gamma_distribution(gamma_samples, sample_size, GAMMA_OFFSET)
-    # plot_exponential_distribution(expon_samples, sample_size)
+    plot_exponential_distribution(expon_samples, sample_size)
     # plot_uniform_distribution(uniform_samples, sample_size, MIN_DELAY, MAX_DELAY)
 
 if __name__ == '__main__':
